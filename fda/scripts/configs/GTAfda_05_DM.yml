@@ -1,0 +1,14 @@
+SOURCE: gta5
+TARGET: Cityscapes
+NUM_CLASSES: 19
+NUM_WORKERS: 4
+DA_METHOD: FDA
+DATA_SRC_DIRECTORY: /home/vandal/datasets/GTA5
+DATA_LIST_SOURCE: /fda/dataset/gta5_list/train.txt
+TRAIN:
+  MODEL: DeepLab_MobileNet
+  RESTORE_FROM: ../../pretrained_models/DeepLab_init.pth
+  BATCH_SIZE: 1
+  LB: 0.05
+
+

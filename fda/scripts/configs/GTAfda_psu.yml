@@ -1,0 +1,12 @@
+SOURCE: gta5
+TARGET: Cityscapes
+NUM_CLASSES: 19
+NUM_WORKERS: 4
+DA_METHOD: FDA
+restore_opt1: ./experiments/snapshots/gta52Cityscapes_DeepLab_MobileNet_FDA_0.01/model_100000_0.01.pth
+restore_opt2: ./experiments/snapshots/gta52Cityscapes_DeepLab_MobileNet_FDA_0.05/model_100000_0.05.pth
+restore_opt3: ./experiments/snapshots/gta52Cityscapes_DeepLab_MobileNet_FDA_0.09/model_100000_0.09.pth
+SAVE: /data/datasets/tmp_DM_gta_fda
+
+
+

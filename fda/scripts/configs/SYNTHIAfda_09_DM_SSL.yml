@@ -1,0 +1,14 @@
+SOURCE: synthia
+TARGET: Cityscapes
+NUM_CLASSES: 19
+NUM_WORKERS: 4
+DA_METHOD: FDA
+DATA_SRC_DIRECTORY: /home/ccuttano/data/SYNTHIA/RAND_CITYSCAPES
+DATA_LIST_SOURCE: /fda/dataset/synthia_list/train.txt
+TRAIN:
+  MODEL: DeepLab_MobileNet_SSL
+  RESTORE_FROM: ../../pretrained_models/DeepLab_init.pth
+  BATCH_SIZE: 1
+  LB: 0.09
+
+
